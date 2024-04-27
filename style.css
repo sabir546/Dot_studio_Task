@@ -1,0 +1,368 @@
+@font-face {
+  font-family: "gotham";
+  src: url("./data/gotham/gotham/Gotham-Bold.otf") format("woff2"),
+    url("./data/gotham/gotham/Gotham-Light.otf") format("woff"),
+    url("./data/gotham/gotham/Gotham-XLight.otf") format("truetype");
+  /* Add more src URLs if necessary */
+}
+@font-face {
+  font-family: "gothamthin";
+  src: url("./data/gotham/gotham/Gotham-Light.otf") format("woff2"),
+    url("./data/gotham/gotham/Gotham-Light.otf") format("woff"),
+    url("./data/gotham/gotham/Gotham-XLight.otf") format("truetype");
+  /* Add more src URLs if necessary */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gotham";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 57.6px;
+  letter-spacing: -3px;
+  padding: 20px 0px;
+  font-family: gotham;
+}
+#heading {
+  color: #114a8d;
+  font-size: 48px;
+  line-height: 57.6px;
+  letter-spacing: -3px;
+}
+#main {
+  height: 808px;
+  width: 1070px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#part2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 330px;
+  width: 1070px;
+  overflow: hidden;
+  gap: 48px;
+  margin-top: 48px;
+}
+#part1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 330px;
+  width: 1070px;
+  overflow: hidden;
+  gap: 48px;
+}
+
+.card {
+  position: relative;
+  width: 520px;
+  height: 330px;
+  overflow: hidden;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/* FOR CARD 1 */
+
+#card1 #content {
+  position: absolute;
+  height: 145px;
+  width: 511px;
+  background: linear-gradient(
+    180.68deg,
+    rgba(0, 0, 0, 0) -9.3%,
+    rgba(0, 0, 0, 0.59) 48.1%,
+    #000000 99.41%
+  );
+  bottom: 0;
+  left: 0;
+}
+
+#card1 #content h3 {
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%); /* Move back by half of its own width */
+  color: #fff;
+  font-weight: 500;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  /* Center the text inside h3 */
+}
+
+span {
+  color: #ffc758;
+}
+
+/*  for card 2 */
+
+#card2 #content {
+  position: absolute;
+  height: 145px;
+  width: 511px;
+  background: linear-gradient(
+    180.68deg,
+    rgba(0, 0, 0, 0) -9.3%,
+    rgba(0, 0, 0, 0.59) 48.1%,
+    #000000 99.41%
+  );
+
+  bottom: 0;
+  left: 0;
+}
+#card2 #content h3 {
+  position: absolute;
+  bottom: 22px;
+  left: 20%;
+  color: #fff;
+  font-weight: 500;
+  font-size: 28px;
+  align-items: center;
+  text-align: center;
+}
+
+span {
+  color: #ffc758;
+}
+
+/* FOR CARD 3 */
+
+#card3 #content {
+  position: absolute;
+  height: 145px;
+  width: 511px;
+  background: linear-gradient(
+    180.68deg,
+    rgba(0, 0, 0, 0) -9.3%,
+    rgba(0, 0, 0, 0.59) 48.1%,
+    #000000 99.41%
+  );
+
+  bottom: 0;
+  left: 0;
+}
+#card3 #content h3 {
+  position: absolute;
+  bottom: 22px;
+  left: 12%;
+  color: #fff;
+  font-weight: 500;
+  font-size: 28px;
+  align-items: center;
+  text-align: center;
+}
+
+span {
+  color: #ffc758;
+}
+
+/* FOR CAED 4 */
+
+#card4 #content {
+  position: absolute;
+  height: 145px;
+  width: 511px;
+  background: linear-gradient(
+    180.68deg,
+    rgba(0, 0, 0, 0) -9.3%,
+    rgba(0, 0, 0, 0.59) 48.1%,
+    #000000 99.41%
+  );
+
+  bottom: 0;
+  left: 0;
+}
+#card4 #content h3 {
+  position: absolute;
+  bottom: 22px;
+  left: 10%;
+  color: #fff;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+span {
+  color: #ffc758;
+}
+
+.card .card-hover-text {
+  position: absolute;
+  bottom: 22px;
+  left: 0;
+  color: white;
+  width: 100%;
+  height: 87%;
+  text-align: center;
+  background-color: #3e437b;
+  padding: 30px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transform: translate(-100%, 100%);
+  pointer-events: none;
+}
+
+.card .card-hover-text p {
+  font-family: "gothamthin";
+  font-weight: 500;
+}
+
+.card .card-hover-text h3 {
+  margin-top: 3.5rem;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.card:hover .card-hover-text {
+  opacity: 1;
+  transform: translate(0%, 0%);
+  pointer-events: auto;
+}
+
+.card .card-hover-text h3 {
+  opacity: 0;
+  transform: translate(-100%, 100%);
+  transition: opacity 0.5s ease-in-out 0.4s;
+ 
+}
+
+.card:hover .card-hover-text h3 {
+  opacity: 1;
+  transform: translate(0%, 0%);
+}
+.card .card-hover-text p {
+  opacity: 0;
+
+  transition:  1s ease-in-out, transform .9s ease-in-out;
+  transform: translate(-0%, 50%);
+ 
+}
+
+.card:hover .card-hover-text p {
+  opacity: 1;
+  transform: translate(0%, 0%);
+}
+
+/* RESPONSIVE FOR PHONE */
+
+@media screen and (max-width: 750px) {
+  #main {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  #part1 {
+    gap: 3%;
+    height: 90%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+  }
+  #part2 {
+    margin-top: 20px;
+    gap: 3%;
+
+    height: 90%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #part1,
+  #part2,
+  .card {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  #heading {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #card3 #content h3 {
+    position: absolute;
+    left: -5%;
+  }
+  @media screen and (max-width: 520px) {
+    #card1 #content h3 {
+      position: absolute;
+      left: 27%;
+      top: 67%;
+    }
+  }
+
+  #card2 #content h3 {
+    position: absolute;
+    left: 10%;
+  }
+  #card1 #content h3 {
+    position: absolute;
+    /* left:27%; */
+    top: 67%;
+  }
+  #card3 #content h3 {
+    position: absolute;
+    left: 8%;
+    top: 60%;
+  }
+  #card4 #content h3 {
+    position: absolute;
+    left: 7%;
+    top: 70%;
+  }
+  #card3 #content h3,
+  #card4 #content h3,
+  #card1 #content h3,
+  #card2 #content h3 {
+    margin: 0 auto;
+    font-size: 5vw;
+    line-height: 6vw;
+  }
+}
